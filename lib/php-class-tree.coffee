@@ -28,10 +28,10 @@ class PhpClassTree
     @treeView = new TreeView matches
 
   attach: ->
-    @treeView.attach()
+    @treeView?.attach()
 
   detach: ->
-    @treeView.detach()
+    @treeView?.detach()
 
   toggle: ->
     if atom.workspace.getActiveTextEditor().getGrammar().name != 'PHP'
